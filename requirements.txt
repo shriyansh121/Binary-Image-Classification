@@ -1,0 +1,7 @@
+tensorflow
+pandas
+numpy
+Pillow  # PIL is accessed via the Pillow library, which is the maintained version of PIL
+opencv-python  # cv2 is installed via the opencv-python package
+scikit-learn  # The official name of the sklearn package is scikit-learn
+streamlit
