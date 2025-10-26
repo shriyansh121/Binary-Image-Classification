@@ -1,0 +1,38 @@
+1. Make a github directory and clone it. 
+2. Make folder data, src, experiments
+3. Download the dataset and move it to data folder
+4. initialize git and dvc
+5. Configure aws 
+aws configure
+6. Set S3 as DVC Remote: Use your S3 bucket name 
+dvc remote add -d s3-remote s3://<your-bucket-name>/dvc-cache
+7. add dvc configurations to git
+git add .dvc/config .dvcignore
+8. dvc add data/kaggle_room_street_data/house_data dvc add data/kaggle_room_street_data/street_data
+
+9. git add data/kaggle_room_street_data/*.dvc
+This is the reason behind why my images are not pushed to github. and only the address md5. real data is stored on aws s3.
+
+10. git commit -m "DVC: Tracked V1 of house and street image data"
+11. push data to s3
+12.  git push
+
+### Data Ingestion
+
+If the data gets deleted from local data ingestion pipeline will pull the whole dataset here and then we can start working on it. 
+data ingestion takes all the images path and label it of rclassifciation and make a dataframe out of it tow work with it.
+house=0 Street=1
+
+"result = subprocess.run(["dvc", "pull"], check=True, capture_output=True, text=True)"
+responsible for onnecting with s3 and pulling the data out of it.
+
+def pull_data_from_remote():
+
+def create_image_manifest():
+
+def load_local_data_path():
+
+
+if __name__=="__main__":
+    
+### Data Preprocessing

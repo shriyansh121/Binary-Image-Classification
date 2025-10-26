@@ -1,0 +1,26 @@
+2025-10-26 14:45:41 - model_building - INFO - --- Starting Model Building Stage ---
+2025-10-26 14:45:41 - model_building - INFO - Building CNN model with input shape: [100, 100, 3]
+2025-10-26 14:45:42 - model_building - INFO - Model: "sequential"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┓
+┃ Layer (type)                         ┃ Output Shape                ┃         Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━┩
+│ conv_1 (Conv2D)                      │ (None, 98, 98, 16)          │             448 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ pool_1 (MaxPooling2D)                │ (None, 49, 49, 16)          │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ conv_2 (Conv2D)                      │ (None, 47, 47, 32)          │           4,640 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ pool_2 (MaxPooling2D)                │ (None, 23, 23, 32)          │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ flatten (Flatten)                    │ (None, 16928)               │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense_1 (Dense)                      │ (None, 32)                  │         541,728 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ output (Dense)                       │ (None, 1)                   │              33 │
+└──────────────────────────────────────┴─────────────────────────────┴─────────────────┘
+ Total params: 546,849 (2.09 MB)
+ Trainable params: 546,849 (2.09 MB)
+ Non-trainable params: 0 (0.00 B)
+
+2025-10-26 14:45:42 - model_building - INFO - Successfully built and saved UNTRAINED model to: /Users/shriyansh/Documents/Data Science/mlops/image_processing/Binary-Image-Classification/run/models/untrained_model.h5
+2025-10-26 14:45:42 - model_building - INFO - --- Model Building Stage Complete ---

@@ -1,0 +1,28 @@
+data_preprocessing:
+  test_size: 0.2
+  random_state: 42
+  
+  # Augmentation parameters
+  augment_rotations: [90, 180, 270] # Angles to rotate the images
+  augment_flips: True # Include vertical/horizontal flips
+  
+  # Output file paths
+  train_manifest_out: data/processed/train_manifest.csv
+  test_manifest_out: data/processed/test_manifest.csv
+
+model_building:
+  input_shape: [100, 100, 3] # Expected image size (height, width, channels)
+  conv1_filters: 16
+  conv2_filters: 32
+  dense1_units: 32
+  output_classes: 1 # Binary Classification (House vs Street)
+  output_activation: 'sigmoid'
+
+model_training:
+  epochs: 1
+  batch_size: 32
+  optimizer: 'Adam'
+  learning_rate: 0.001
+  loss: 'binary_crossentropy'
+  metrics: ['accuracy']
+  trained_model_out: run/models/trained_model.h5

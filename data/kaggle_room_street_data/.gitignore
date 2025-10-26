@@ -1,0 +1,17 @@
+/house_data
+/street_data
+# DVC-tracked data and their contents
+data/kaggle_room_data/
+data/house_data/
+
+# Data artifacts (often large)
+data/processed/
+
+# Run/Model artifacts
+run/
+logs/
+reports/
+
+# DVC internal folders
+.dvc/
+experiments/

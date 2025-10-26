@@ -1,0 +1,18 @@
+2025-10-26 13:33:57 - data_ingestion - INFO - Starting Data Ingestion Pipeline Stage.
+2025-10-26 13:34:05 - data_ingestion - INFO - Successfully created and saved image manifest to: /Users/shriyansh/Documents/Data Science/mlops/image_processing/Binary-Image-Classification/data/processed/raw_image_manifest.csv
+2025-10-26 13:34:05 - data_ingestion - INFO - Total rows in manifest: 24907
+2025-10-26 13:42:49 - data_ingestion - INFO - Starting Data Ingestion Pipeline Stage.
+2025-10-26 13:42:49 - data_ingestion - DEBUG - Starting DVC pull to ensure data is in local cache...
+2025-10-26 13:42:55 - data_ingestion - INFO - DVC Pull Successful.
+2025-10-26 13:42:55 - data_ingestion - DEBUG - DVC Pull Output: Everything is up to date.
+
+2025-10-26 13:42:55 - data_ingestion - DEBUG - Creating image manifests from local directory...
+2025-10-26 13:42:55 - data_ingestion - DEBUG - Creating image manifest for directory: /Users/shriyansh/Documents/Data Science/mlops/image_processing/Binary-Image-Classification/data/kaggle_room_street_data/house_data...
+2025-10-26 13:42:55 - data_ingestion - INFO - Found 5249 images in /Users/shriyansh/Documents/Data Science/mlops/image_processing/Binary-Image-Classification/data/kaggle_room_street_data/house_data.
+2025-10-26 13:42:55 - data_ingestion - DEBUG - Creating image manifest for directory: /Users/shriyansh/Documents/Data Science/mlops/image_processing/Binary-Image-Classification/data/kaggle_room_street_data/street_data...
+2025-10-26 13:42:55 - data_ingestion - INFO - Found 19658 images in /Users/shriyansh/Documents/Data Science/mlops/image_processing/Binary-Image-Classification/data/kaggle_room_street_data/street_data.
+2025-10-26 13:42:55 - data_ingestion - INFO - Successfully loaded 5249 house images.
+2025-10-26 13:42:55 - data_ingestion - INFO - Successfully loaded 19658 street images.
+2025-10-26 13:42:55 - data_ingestion - INFO - Successfully created and saved image manifest to: /Users/shriyansh/Documents/Data Science/mlops/image_processing/Binary-Image-Classification/data/processed/raw_image_manifest.csv
+2025-10-26 13:42:55 - data_ingestion - INFO - Total rows in manifest: 24907
+2025-10-26 13:42:55 - data_ingestion - INFO - Data Ingestion Pipeline Stage completed successfully.

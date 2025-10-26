@@ -1,0 +1,12 @@
+2025-10-26 14:10:02 - data_preprocessing - INFO - --- Starting Data Preprocessing Stage ---
+2025-10-26 14:10:02 - data_preprocessing - ERROR - Manifest not found: /Users/shriyansh/Documents/Data Science/mlops/image_processing/Binary-Image-Classification/data/processed/raw_image_data.csv. Did data_ingestion.py run successfully?
+2025-10-26 14:10:42 - data_preprocessing - INFO - --- Starting Data Preprocessing Stage ---
+2025-10-26 14:10:43 - data_preprocessing - INFO - Loaded initial manifest with 24907 images.
+2025-10-26 14:10:43 - data_preprocessing - INFO - Starting augmentation: Rotations=[90, 180, 270], Flips=True
+2025-10-26 14:15:02 - data_preprocessing - INFO - Augmentation complete. Dataset size increased from 24907 to 149442 rows.
+2025-10-26 14:15:02 - data_preprocessing - INFO - Starting data split (Test Size: 0.2, Random State: 42).
+2025-10-26 14:15:02 - data_preprocessing - INFO - Train split size: 119553 rows.
+2025-10-26 14:15:02 - data_preprocessing - INFO - Test split size: 29889 rows.
+2025-10-26 14:15:02 - data_preprocessing - INFO - Training manifest saved to: /Users/shriyansh/Documents/Data Science/mlops/image_processing/Binary-Image-Classification/data/processed/train_manifest.csv
+2025-10-26 14:15:02 - data_preprocessing - INFO - Testing manifest saved to: /Users/shriyansh/Documents/Data Science/mlops/image_processing/Binary-Image-Classification/data/processed/test_manifest.csv
+2025-10-26 14:15:02 - data_preprocessing - INFO - --- Data Preprocessing Pipeline Complete ---

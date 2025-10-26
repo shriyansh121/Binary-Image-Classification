@@ -1,0 +1,25 @@
+2025-10-26 14:53:15 - model_training - INFO - --- Starting Model Training Stage ---
+2025-10-26 14:53:15 - model_training - INFO - Loading untrained model from /Users/shriyansh/Documents/Data Science/mlops/image_processing/Binary-Image-Classification/run/models/untrained_model.h5
+2025-10-26 14:53:15 - model_training - INFO - Starting model training.
+2025-10-26 14:53:18 - model_training - INFO - Compiling model with optimizer=Adam and loss=binary_crossentropy
+2025-10-26 14:53:18 - model_training - INFO - Training for 8 epochs...
+2025-10-26 15:03:03 - model_training - INFO - --- Starting Model Training Stage ---
+2025-10-26 15:03:03 - model_training - INFO - Loading untrained model from /Users/shriyansh/Documents/Data Science/mlops/image_processing/Binary-Image-Classification/run/models/untrained_model.h5
+2025-10-26 15:03:03 - model_training - INFO - Starting model training.
+2025-10-26 15:03:04 - model_training - INFO - Train set class distribution (0=House, 1=Street): {1: 94358, 0: 25195}
+2025-10-26 15:03:04 - model_training - INFO - Test set class distribution (0=House, 1=Street): {1: 23590, 0: 6299}
+2025-10-26 15:03:05 - model_training - INFO - Compiling model with optimizer=Adam and loss=binary_crossentropy
+2025-10-26 15:03:05 - model_training - INFO - Training for 1 epochs...
+2025-10-26 15:08:50 - model_training - INFO - Training complete.
+2025-10-26 15:08:50 - model_training - INFO - Successfully saved TRAINED model to: /Users/shriyansh/Documents/Data Science/mlops/image_processing/Binary-Image-Classification/run/models/trained_model.h5
+2025-10-26 15:08:50 - model_training - INFO - --- Model Training Stage Complete ---
+2025-10-26 15:13:53 - model_training - INFO - --- Starting Model Training Stage ---
+2025-10-26 15:13:53 - model_training - INFO - Loading untrained model from /Users/shriyansh/Documents/Data Science/mlops/image_processing/Binary-Image-Classification/run/models/untrained_model.h5
+2025-10-26 15:13:53 - model_training - INFO - Starting model training.
+2025-10-26 15:13:53 - model_training - INFO - Train set class distribution (0=House, 1=Street): {1: 94358, 0: 25195}
+2025-10-26 15:13:53 - model_training - INFO - Test set class distribution (0=House, 1=Street): {1: 23590, 0: 6299}
+2025-10-26 15:13:54 - model_training - INFO - Compiling model with optimizer=Adam and loss=binary_crossentropy
+2025-10-26 15:13:54 - model_training - INFO - Training for 1 epochs...
+2025-10-26 15:19:54 - model_training - INFO - Training complete.
+2025-10-26 15:19:54 - model_training - INFO - Successfully saved TRAINED model to: /Users/shriyansh/Documents/Data Science/mlops/image_processing/Binary-Image-Classification/run/models/trained_model.h5
+2025-10-26 15:19:54 - model_training - INFO - --- Model Training Stage Complete ---
