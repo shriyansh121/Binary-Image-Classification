@@ -1,0 +1,6 @@
+outs:
+- md5: 458c47490ea7e68a1f7eef1e805a1cfd.dir
+  size: 122039748
+  nfiles: 5249
+  hash: md5
+  path: house_data

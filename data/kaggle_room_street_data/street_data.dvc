@@ -1,0 +1,6 @@
+outs:
+- md5: 1574919013676bc80d28442d2b5d607d.dir
+  size: 186128698
+  nfiles: 19658
+  hash: md5
+  path: street_data
