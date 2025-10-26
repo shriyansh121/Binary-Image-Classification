@@ -1,0 +1,51 @@
+stages:
+  ingest:
+    cmd: python src/data_ingestion.py
+    deps:
+      # Dependencies: The code and the raw, DVC-tracked data folder
+      - src/data_ingestion.py
+      - data/kaggle_room_street_data/house_data
+      - data/kaggle_room_street_data/street_data
+    outs:
+      # Output: The combined manifest of all original image paths
+      - data/processed/raw_image_data.csv
+
+  preprocess:
+    cmd: python src/preprocess_data.py
+    deps:
+      - src/preprocess_data.py
+      - params.yaml
+      - data/processed/raw_image_data.csv # Depends on ingest output
+    outs:
+      # Outputs: The augmented and split data manifests
+      - data/processed/train_manifest.csv
+      - data/processed/test_manifest.csv
+
+  build_model:
+    cmd: python src/model_building.py
+    deps:
+      - src/model_building.py
+      - params.yaml
+    outs:
+      - run/models/untrained_model.h5 # Untrained model architecture
+
+  train_model:
+    cmd: python src/model_training.py
+    deps:
+      - src/model_training.py
+      - params.yaml
+      - run/models/untrained_model.h5
+      - data/processed/train_manifest.csv
+      - data/processed/test_manifest.csv
+    outs:
+      - run/models/trained_model.h5 # The final trained model
+
+  evaluate_model:
+    cmd: python src/model_evaluation.py
+    deps:
+      - src/model_evaluation.py
+      - run/models/trained_model.h5 # Depends on the trained model
+      - data/processed/test_manifest.csv # Requires the test data
+    metrics:
+      - reports/metrics.json:
+          cache: false # Instruct DVC to track but not cache this small file
